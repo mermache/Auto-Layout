@@ -26,4 +26,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)greenButton:(id)sender {
+    if ([[sender titleForState:UIControlStateNormal] isEqualToString:@"X"]) {
+        [sender setTitle:@"A very long title for this button"
+                forState:UIControlStateNormal];
+    } else {
+        [sender setTitle:@"X" forState:UIControlStateNormal];
+    }
+
+}
+
+- (IBAction)OrangeButton:(id)sender {
+    if ([[sender titleForState:UIControlStateNormal] isEqualToString:@"X"]) {
+        [sender setTitle:@"A very long title for this button"
+                forState:UIControlStateNormal];
+    } else {
+        [sender setTitle:@"X" forState:UIControlStateNormal];
+    }
+
+}
 @end
